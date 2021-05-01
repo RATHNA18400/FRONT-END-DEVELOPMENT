@@ -36,6 +36,8 @@
                     display:block;
                     margin:0 auto;
                     background-color: turquoise;
+                    width:50%;
+                    height:50%
                 }
 
                 #second{
