@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                .flex-direction {
+                display: flex;
+                height: 200px;
+                align-items: center;
+                background-color: DodgerBlue;
+                }
+
+                .flex-direction > div {
+                background-color: #f1f1f1;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+                }
+
+                .flex-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: DodgerBlue;
+                }
+
+                .flex-wrap > div {
+                background-color: #f1f1f1;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+                }
+
+                * {
+                    box-sizing: border-box;
+                    }
+
+                    body {
+                    margin: 0;
+                    font-family: Arial;
+                    }
+
+                    .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                    }
+
+                    /* Create four equal columns that sits next to each other */
+                    .column {
+                    flex: 25%;
+                    max-width: 25%;
+                    padding: 0 4px;
+                    }
+
+                    .column img {
+                    margin-top: 8px;
+                    vertical-align: middle;
+                    }
+                    /* Responsive layout - makes a two column-layout instead of four columns */
+                    @media (max-width: 800px) {
+                    .column {
+                        flex: 50%;
+                        max-width: 50%;
+                    }
+                    }
+
+                    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                    @media (max-width: 600px) {
+                    .column {
+                        flex: 100%;
+                        max-width: 100%;
+                    }
+                    }
+
+                
+            </style>
+            </head>
+            <body>
+                <h1>Flex direction Property</h1>
+                <div class="flex-direction">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>  
+                </div>
+
+                <h1>Flex wrap property</h1>
+                <div class="flex-wrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>  
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>  
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>  
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>  
+                  </div>
+
+                  <h1>CLASS FLEXBOX RESPONSIVE</h1>
+                  <div class="responsive">
+                      <div class="row">
+                          <div class="column">
+                              <img src="pexels-josh-sorenson-1714205.jpg" style="width:100%">
+                              <img src="pexels-pixabay-221011.jpg" style="width: 100%;">
+                              <img src="pexels-pixabay-355465.jpg" style="width: 100%;">
+                          
+                          </div>
+
+                          <div class="column">
+                            <img src="pexels-josh-sorenson-1714205.jpg" style="width:100%">
+                            <img src="pexels-pixabay-221011.jpg" style="width: 100%;">
+                            <img src="pexels-pixabay-355465.jpg" style="width: 100%;">
+                        
+                        </div>
+
+                        <div class="column">
+                            <img src="pexels-josh-sorenson-1714205.jpg" style="width:100%">
+                            <img src="pexels-pixabay-221011.jpg" style="width: 100%;">
+                            <img src="pexels-pixabay-355465.jpg" style="width: 100%;">
+                        
+                        </div>
+
+                        <div class="column">
+                            <img src="pexels-josh-sorenson-1714205.jpg" style="width:100%">
+                            <img src="pexels-pixabay-221011.jpg" style="width: 100%;">
+                            <img src="pexels-pixabay-355465.jpg" style="width: 100%;">
+                        
+                        </div>
+                      </div>
+                  </div>
+
+                 
+        </body>
+    </html>
