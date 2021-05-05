@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ASSIGNMENT 03.01.2021</title>
+        <style>
+            *{
+                text-align:center;
+                max-width: (991px,80%);
+            }
+
+            h1{
+                color: brown;
+            }
+
+            h2{
+                color:blue;
+            }
+
+            section.pseudo a:link{
+                color:red;
+            }
+            /* visited link */
+             section.pseudo a:visited {
+                color: green;
+                }
+
+                /* mouse over link */
+            section.pseudo a:hover {
+                color: hotpink;
+                }
+
+                /* selected link */
+            section.pseudo a:active {
+                color: blue;
+                }
+        
+
+                div.hover1 {
+                    background-color: #cccf133f;
+                    color: rgb(138, 15, 15);
+                    padding: 25px;
+                    text-align: center;
+                    }
+
+                    div.hover1:hover {
+                    background-color: rgb(20, 194, 171);
+                    }
+               
+                    .tp {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+                }
+
+                .tp .tp1{
+                visibility: hidden;
+                width: 120px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                left: 50%;
+                margin-left: -60px;
+                opacity: 0;
+                transition: opacity 0.3s;
+                }
+
+                .tp .tp1::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+                }
+
+                .tp:hover .tp1 {
+                visibility: visible;
+                opacity: 1;
+                }
+                
+               
+               
+     </style>
+    </head>
+
+    <body>
+        <h1><center><marquee>ASSIGNMENT 03.05.2021</marquee></center></h1>
+        <section class="pseudo">
+            <h1>PSEUDO CLASSES</h1>
+            <h2>ANCHOR PSEUDO CLASS</h2>
+            <h3>Trees play an important role in ecosystem and they provide a range of products and services to rural and urban people     </h3>
+            <a  href="https://www.grow-trees.com/blog/uncategorized/common-trees-in-india/">COMMON TREES IN INDIA</a>
+        </section>
+        <br><br><br>
+        <section class="hover">
+            <h2> HOVER CLASS</h2>
+            <h3>Person or organization that maintains a business relationship with, and uses service from, Cloud Providers</h3>
+            <div class="hover1">
+                <a href="https://patterns.arcitura.com/cloud-computing-patterns/basics/roles-and-boundaries/cloud_consumer">CLOUD CONSUMER</a>
+            </div>
+        </section>
+        <br><br><br>
+        <section class="tooltip">
+            <h2>TOOLTIP CLASS</h2>
+            <div class="tp">CHECK HERE ABOUT CLOUD COMPUTING!
+                <span class="tp1">Cloud refers to a Network or Internet</span>
+            </div>
+        </section>
+        <br><br><br>
+
+    </body>
+</html>
