@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ASSIGNMENT 03.05.2021</title>
+        <style>
+             body{
+                    margin:0
+                    }
+
+                    img{
+                    max-width: 50%
+                    }
+
+                    .container{
+                    width:min(991px, 80%);
+                    margin:auto
+                    }
+
+                    .d-flex{
+                    /*   background-color:lightblue; */
+                    display: flex;
+                    flex-direction:row;
+                    align-items: center;
+                    justify-content:flex-end;
+                    height:100vh
+                    }
+
+                    .about::before{
+                    content:'';                       
+                    border: 6px dotted blue;
+                    /*   border-radius:80%; */
+                    border-top-right-radius:50%;
+                    border-top-left-radius:50%;
+                    border-bottom:0;                    
+                    margin: 2rem;
+                    width:10rem;
+                    height:10rem;
+                    /*   z-index:-1; */
+                    /*   border-radius:10px; */
+                    opacity:.5;
+                    position: absolute;
+                    left:0;
+                    top:30%
+                    }
+
+                    @media(min-width:768px){
+                    .d-flex{
+                        flex-direction:row;
+                        justify-content:space-between;
+                    }
+                    }
+        </style>
+    </head>
+    <body>
+        <section class="about">
+            <div class="container">
+              <div class="d-flex">
+                
+                          <img class="col-img" src="pexels-designecologist-1779487.jpg" alt="">
+                <div class="col-text">
+                  <h2>About COMPUTER</h2>
+                  <P>The history of computer begins with the birth of abacus which is believed to be the first computer. It is said that Chinese invented Abacus around 4,000 years ago. t was a wooden rack which has metal rods with beads mounted on them. The beads were moved by the abacus operator according to some rules to perform arithmetic calculations.It was a manually-operated calculating device which was invented by John Napier (1550-1617) of Merchiston. In this calculating tool, he used 9 different ivory strips or bones marked with numbers to multiply and divide. So, the tool became known as "Napier's Bones. It was also the first machine to use the decimal point.</P>
+                </div>
+              </div>
+            </div>
+          </section>
+    </body>
+</html>
